@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function Main() {
     const [ib, setIb] = useState('Click the button below to get started!')
 
     const array = ['Ice-breaker 1', 'Ice-breaker 2', 'Ice-breaker 3']
 
+    useEffect(() => {
+        axios.get('https://graph.facebook.com/v13.0/me/messenger_profile?fields=ice_breakers&access_token=<PAGE_ACCESS_TOKEN>')
+        .then(res => {
+            console.log(res.data);
+            setIb(res.data)
+        })
+    },[])
+    
     const getIcebreaker = () => {
         return (
             <div>
