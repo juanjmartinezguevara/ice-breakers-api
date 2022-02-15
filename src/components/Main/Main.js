@@ -24,7 +24,7 @@ function Main() {
     }
 
     return (
-        <div>
+        <div className='main'>
             <h1>{ib}</h1>
             <button onClick={() => getIcebreaker()} className='main-button'>Find an Ice Breaker!</button>
         </div>
