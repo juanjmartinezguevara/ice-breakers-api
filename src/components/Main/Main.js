@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import './Main.css'
 
 function Main() {
     const [ib, setIb] = useState('Click the button below to get started!')
@@ -25,7 +26,7 @@ function Main() {
     return (
         <div>
             <h1>{ib}</h1>
-            <button onClick={() => getIcebreaker()}>Find an Ice Breaker!</button>
+            <button onClick={() => getIcebreaker()} className='main-button'>Find an Ice Breaker!</button>
         </div>
     )
 }

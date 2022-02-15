@@ -1,0 +1,10 @@
+.main-button {
+    padding: 1vw;
+    border-radius: 25vw;
+    border-width: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    background-color: #f26122;
+    box-shadow: #002c40 0.3rem 0.3rem;
+}
