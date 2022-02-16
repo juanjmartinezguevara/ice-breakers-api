@@ -34,10 +34,10 @@ function Main() {
           {ib == "Click the button below to get started" ? "..." : null}
         </h1>
         <button onClick={() => getIcebreaker()} className="main-button">
-          Find an Ice Breaker!
+          Find an Ice Breaker
         </button>
       </div>
-      <span></span>
+      <span className='main-container main-container-divide'></span>
       <div className="main-signup main-container">
           <h1>Want to submit your own icebreakers?</h1>
           <button className="main-button">Sign Up!</button>
