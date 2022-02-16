@@ -2,14 +2,23 @@
     background-color: rgba(0,0,0,0.05);
     height: 80vh;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container {
+    height: inherit;
+    width: max-content;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .main-button {
     padding: 1vw;
-    max-width: 25vw;
+    min-width: 15vw;
     border-radius: 25vw;
     border-width: none;
     color: white;
