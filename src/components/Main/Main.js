@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Main.css";
-import Temp from './temp.json'
+import Temp from "./temp.json";
 
 function Main() {
   const [ib, setIb] = useState("Click the button below to get started");
@@ -27,6 +27,11 @@ function Main() {
 
   return (
     <div className="main">
+      <div className="main-signup main-container">
+        <h1 className="main-heading-1">Want to submit your own icebreakers?</h1>
+        <button className="main-button">Sign Up!</button>
+      </div>
+      <span id="main-container-divide" className="main-container"></span>
       <div className="main-icebreaker main-container">
         <h1 className="main-heading-1">
           {ib}
@@ -36,10 +41,10 @@ function Main() {
           Find an Ice Breaker
         </button>
       </div>
-      <span id='main-container-divide' className='main-container'></span>
-      <div className="main-signup main-container">
-          <h1>Want to submit your own icebreakers?</h1>
-          <button className="main-button">Sign Up!</button>
+      <span id="main-container-divide" className="main-container"></span>
+      <div className="main-trending main-container">
+        <h1 className="main-heading-1">Trending</h1>
+        <button className="main-button">Trending</button>
       </div>
     </div>
   );

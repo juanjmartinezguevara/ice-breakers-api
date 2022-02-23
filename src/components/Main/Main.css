@@ -7,12 +7,13 @@
 }
 
 .main-container {
-    height: inherit;
-    width: 40vw;
+    width: 20vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: lightblue;
 }
 
 #main-container-divide {
@@ -20,6 +21,11 @@
     width: 0.2vw;
     height: 60vh;
     border-radius: 25vw;
+}
+
+.main-heading-1 {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .main-button {
@@ -32,4 +38,7 @@
     font-weight: 900;
     background-color: #f26122;
     box-shadow: #002c40 0.3rem 0.3rem;
+    position: relative;
+    bottom: 2rem;
 }
+

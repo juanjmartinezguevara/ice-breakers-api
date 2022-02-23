@@ -3,9 +3,9 @@ import './Header.css'
 
 function Header() {
     return (
-        <nav className='header'>
+        <header className='header'>
             <h1 className='header-title'>Icebreakers</h1>
-        </nav>
+        </header>
     )
 }
 
