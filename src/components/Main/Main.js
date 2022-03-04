@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import "./Main.css";
 import Temp from "./temp.json";
 
@@ -31,9 +31,9 @@ function Main() {
         <h1 className="main-heading-1">Want to submit your own icebreakers?</h1>
         <button className="main-button">Sign Up!</button>
       </div>
-      <span id="main-container-divide" className="main-container"></span>
+      {/* <span id="main-container-divide"></span> */}
       <div className="main-icebreaker main-container">
-        <h1 className="main-heading-1">
+        <h1 id='main-container-heading-findicebreaker' className="main-heading-1">
           {ib}
           {ib == "Click the button below to get started" ? "..." : null}
         </h1>
@@ -41,7 +41,7 @@ function Main() {
           Find an Ice Breaker
         </button>
       </div>
-      <span id="main-container-divide" className="main-container"></span>
+      {/* <span id="main-container-divide"></span> */}
       <div className="main-trending main-container">
         <h1 className="main-heading-1">Trending</h1>
         <button className="main-button">Trending</button>
